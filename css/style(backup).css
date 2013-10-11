@@ -1,0 +1,257 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	vertical-align: baseline;
+	background: transparent;
+}
+/**GENERAL**/
+body{
+	font-family: arial, sans-serif;
+}
+a{color: #1EA019}
+a:hover{}
+a[target="_blank"]{ 
+  background: url('../images/icon-ext.png') right no-repeat;
+  padding-right: 20px;
+}
+
+a[href^="http://jotihunt.net"]{
+	background: url('../images/icon-joti.png') 3px 0 no-repeat;
+	padding-left: 20px;
+	color: darkgreen;
+}
+
+a[href^='http://maps.google'], a[href^='https://maps.google']{
+	background: url('../images/icon-maps.png') right no-repeat;
+	padding-right: 20px;
+	color: #985;
+}
+
+
+/**WRAPPER**/
+div#wrapper{
+	max-width: 960px;
+	background-color: #F5F5F5;
+	margin: 0 auto;
+}
+
+/**TOP**/
+div#top{
+	
+}
+#top h1{
+	text-decoration: none;
+	font-size: 30pt;
+	line-height:40px;
+	padding: 5px;
+	color: #555;
+}
+#top h1:first-letter{
+	font-size: 50pt;
+	position:relative;
+	top:10px;
+}
+
+/**MAIN**/
+div#main{
+	width: 75%;
+	padding-left: 5%;
+	float: right;
+}
+
+div.coords-wgs{
+	position: relative;
+	display: inline-block;
+}
+span.rdtag{
+	display: none;
+	position: absolute;
+	top: 1.2em;
+	float:right;
+	right: 20px;
+	min-width: 100px;
+	padding: 6px;
+	z-index: 100;
+	background: #111;
+	color: #eee;
+	font-size: 10pt;
+}
+
+div.stats{
+	width: 200px;
+	min-height: 40px;
+	background-color: #EE3333;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	float: left;
+}
+.stats h3{
+	line-height: 11px;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+.stats span{
+	line-height: 29px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.statspunten{
+	width: 40px !important;
+	font-size: 24px;
+	font-weight: bold;
+}
+.stats span ul li{
+	list-style: none;
+	background-color: #ABABAB;
+}
+.stats span ul li:nth-of-type(odd){
+	background-color: #BCBCBC;
+}
+
+
+/**SIDEBAR**/
+div#sidebar{
+	float: left;
+	width: 20%;
+}
+
+
+/**NAV**/
+#nav{}
+
+#nav li{
+	margin-bottom: 0;
+	list-style: none;
+}
+
+#nav li:hover{}
+
+#nav li a{
+	display: block;
+	padding: 0 0 0 5%;
+	width: 95%;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #787878;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+	border-bottom: 1px solid #383838;
+}
+/*Disable mobile nav buttons */
+#nav li:first-child a{display:none}
+a#smallnavbtn{display:none}
+
+#nav li:last-child a{
+	border-bottom:none;
+}
+
+#nav li a:hover{}
+
+#smallnavbtn a{
+	display:none;
+}
+
+#nav .current{
+	background-color: #898989;
+}
+
+/**FOOTER**/
+div#footer{}
+#footer p{
+	width: 280px;
+	text-align: center;
+	margin:0 auto;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	/*Top*/
+	div#top{
+		height: 30px;
+	}
+	#top h1{
+		margin-left: 66px;
+		line-height: 30px;
+		font-size: 20px;
+		padding: 0;
+	}
+	#top h1:first-letter{
+		font-size: 100%;
+	}
+	
+	/*Main*/
+	div#main{
+		float:none;
+	}
+	
+	
+	/*Nav*/
+	#nav li {
+		margin: 0;
+		background: darkgreen;
+		display: block;
+		margin-bottom: 3px;
+		min-width: 100px;
+	}
+	#nav li a {
+		display: block;
+	}
+	a#smallnavbtn, #nav li:first-child a{
+		position: absolute;
+		top: 0;
+		display:block !important;
+		float: left;
+		color: #fff;
+		background: #4e4e4e;
+		text-decoration: none;
+		padding: 0 10px;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 30px;
+		height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		-webkit-border-radius: 0 0 4px 0;
+		-moz-border-radius: 0 0 4px 0;
+		border-radius: 0 0 4px 0 ;
+	}
+	/*Put the rest of the ul at the right pos again*/
+	#nav li:first-child{margin-bottom: 30px;}
+
+	
+	div#sidebar{
+		width: 0 !important;
+	}
+	/*Only display nav when targeted*/
+	#nav {display:none}
+	#nav:target{
+		position: absolute;
+		top: 0;
+		display:block !important;
+		width:200px;
+		margin: 0;
+		z-index: 1000;
+	}
+	#nav li{
+		width:200px;
+		margin: 0;
+	}
+
+}

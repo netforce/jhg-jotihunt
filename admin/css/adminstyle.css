@@ -1,0 +1,236 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	vertical-align: baseline;
+	background: transparent;
+}
+/**GENERAL**/
+body{
+	font-family: arial, sans-serif;
+	background-color: #333344;
+	color: #DDD;
+}
+a[target="_blank"]{ 
+  background: url('../../images/icon-ext.png') right no-repeat;
+  padding-right: 20px;
+}
+
+a[href^="http://jotihunt.net"]{
+	background: url('../../images/icon-joti.png') right no-repeat;
+	padding-right: 20px;
+}
+
+a[href^='http://maps.google'], a[href^='https://maps.google']{
+	background: url('../../images/icon-maps.png') right no-repeat;
+	padding-right: 20px;
+}
+
+
+/**WRAPPER**/
+div#wrapper{
+	background-color: #224477;
+	border: 1px solid #777;
+	max-width: 960px;
+	margin: 20px auto;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+/**TOP**/
+div#top{
+	
+}
+#top h1 a{
+	color: #EEF;
+	text-decoration: none;
+	font-size: 30pt;
+	line-height:50px;
+	padding: 5px;
+	margin-left: 6.3%;
+}
+
+
+/**MAIN**/
+div#main{
+	width: 75%;
+	padding: 15px;
+	float: right;
+	padding-bottom: 20px;
+}
+
+table{
+	background-color: #99A;
+	border-collapse: collapse;
+	border: 1px solid #EEE;
+	cursor: default;
+	color: #FFF;
+}
+td, td input{
+	font-size: 8pt;
+	border: 1px solid #EEE;
+	padding: 2px 3px;
+}
+tr:hover{
+	background-color: #AAB;
+	color: #FFF;
+}
+tr:first-child, tr:last-child{
+	background-color: #99999F;
+	color: #DDD;
+}
+tr:first-child:hover, tr:last-child:hover{
+	background-color: #99999F;
+	color: #EEE;
+}
+td span{
+	font-size: 8pt;
+}
+td span.greenconfirmation{
+	color: #3E3;
+}
+td a{
+	color: #FFF;
+}
+a.edit:hover{
+	color: green;
+}
+a.delete:hover{
+	color: darkred;
+}
+div.currentHourMarker{
+	background-color: #EEE;
+	color: #222;
+	font-size: 16px;
+}
+td.currentActivity{
+	background-color: #EEE;
+	color: #333;
+}
+table table tr td{
+	background-color: #99A;
+	color: #FFF;
+}
+
+
+
+
+div.stats{
+	width: 200px;
+	min-height: 40px;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	float: left;
+}
+.stats h3{
+	line-height: 11px;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+.stats span{
+	line-height: 29px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.statspunten{
+	width: 40px !important;
+	font-size: 24px;
+	font-weight: bold;
+}
+.stats span ul li{
+	list-style: none;
+}
+.stats span ul li:nth-of-type(odd){
+}
+
+
+/**SIDEBAR**/
+div#sidebar{
+	width: 20%;
+}
+
+
+/**NAV**/
+#nav{}
+
+#nav li{
+	margin-bottom: 0;
+	list-style: none;
+}
+
+#nav li:last-child a{
+	border-radius: 0 0 5px 0;
+	-moz-border-radius: 0 0 5px 0;
+}
+
+#nav li:hover{}
+
+#nav li a{
+	display: block;
+	padding: 0 0 0 5%;
+	width: 95%;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+	border-bottom: 1px solid #BBB;
+	background-color: #EEE;
+	color: #349;
+}
+
+#nav li:last-child a{
+	border-bottom:none;
+}
+
+#nav li a:hover{
+	background-color: #FFF;
+}
+
+#nav .current{
+	background-color: #F9F9FF;
+	padding-right: 2px;
+	text-decoration: underline;
+}
+
+/**FOOTER**/
+div#footer{
+	margin-top: 20px;
+}
+#footer p{
+	width: 300px;
+	text-align: center;
+	margin:0 auto;
+	padding-bottom: 10px;
+}
+
+
+/* Media Queries*/ 
+@media screen and (max-width: 580px) {
+	#main{
+		float: left !important;
+		clear: both;
+	}
+	#nav li{
+		width: 100%;
+	}
+	#sidebar{
+		width: 80% !important;
+		clear: both;
+		margin: 0 auto;
+	}
+}

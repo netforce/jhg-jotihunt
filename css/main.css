@@ -1,0 +1,358 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	vertical-align: baseline;
+	background: transparent;
+}
+/**GENERAL**/
+body{
+	font-family: Arial, sans-serif;
+}
+p{
+	margin-bottom: 1em;
+}
+li{
+	list-style: none;
+}
+table p{
+	margin-bottom: 0;
+}
+
+a[target="_blank"]{ 
+  background: url('../images/icon-ext.png') right no-repeat;
+  padding-right: 20px;
+}
+
+a[href^="http://jotihunt.net"], a[href^="http://www.jotihunt.net"]{
+	background: url('../images/icon-joti.png') right no-repeat;
+	padding-right: 20px;
+}
+
+a[href^='http://maps.google'], a[href^='https://maps.google'], a[href^='http://www.maps.google'], a[href^='https://www.maps.google']{
+	background: url('../images/icon-maps.png') right no-repeat;
+	padding-right: 20px;
+}
+
+
+/**WRAPPER**/
+div#wrapper{
+	max-width: 960px;
+	margin: 20px auto;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+div#lightswitch{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	border-radius: 0 0 0 5px;
+	-webkit-border-radius: 0 0 0 5px;
+}
+div#lightswitch div{
+	margin: 5px;
+}
+div#lightswitch a{
+	width: 40px;
+	height: 40px;
+}
+
+
+/**TOP**/
+div#top{
+	
+}
+#top h1 a{
+	text-decoration: none;
+	font-family: Ruge Boogie, cursive;
+	font-size: 40pt;
+	font-weight: 500;
+	line-height:40px;
+	padding: 5px;
+	margin-left: 10.8%;
+}
+#top h1:first-letter{
+	font-size: 76px;
+	position:relative;
+	top:10px;
+}
+#top h1 span{
+	font-size: 14pt;
+}
+
+
+/**MAIN**/
+div#main{
+	width: 75%;
+	padding: 15px;
+	float: right;
+	padding-bottom: 20px;
+}
+#main h2{
+	font-family: Modern Antiqua;
+}
+table td{
+	padding: 0 5px;
+}
+div.coords-wgs{
+	position: relative;
+	display: inline-block;
+}
+span.rdtag{
+	display: none;
+	position: absolute;
+	bottom: -40px;
+	float:right;
+	right: 20px;
+	min-width: 100px;
+	min-height: 16px;
+	padding: 6px;
+	z-index: 100;
+	font-size: 10pt;
+}
+#foto span ul li div a, #vossen span ul li div a{
+	font-size: 10px;
+}
+
+#map{
+	margin: 10px;
+	color: #000;
+}
+
+.links{
+	margin-top: 20px;
+}
+.links li {
+	width: 320px;
+	padding: 0 10px 0 0;
+}
+.links li a{
+	padding: 10px 20px 10px 10px;
+	line-height: 40px;
+}
+
+
+/*Stats*/
+div.stats{
+	width: 200px;
+	min-height: 40px;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	float: left;
+}
+.stats h3{
+	line-height: 11px;
+	margin-bottom: 4px;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+.stats span{
+	line-height: 29px;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: italic;
+}
+.statspunten{
+	width: 432px !important;
+	text-align: center;
+}
+.statspunten span{
+	font-size: 36pt;
+	font-weight: bold;
+	line-height: 50px;
+	font-style: normal;
+}
+.stats span ul li{
+	position: relative;
+	padding-left: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	list-style: none;
+	font-style: normal;
+}
+.stats span ul li span.left-note{
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+}
+.stats span ul li a{
+	margin-left: 36px;
+}
+
+
+/**SIDEBAR**/
+div#sidebar{
+	width: 20%;
+}
+
+
+/**NAV**/
+#nav{}
+
+#nav li:last-child a{
+	border-radius: 0 0 5px 0;
+	-moz-border-radius: 0 0 5px 0;
+	-webkit-border-radius: 0 0 5px 0;
+}
+#nav li{
+	margin-bottom: 0;
+	list-style: none;
+}
+
+#nav li:hover{}
+
+#nav li a{
+	display: block;
+	padding: 0 0 0 5%;
+	width: 95%;
+	text-decoration: none;
+	font-family: Modern Antiqua;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+	border-bottom: 1px solid #EEEE44;
+}
+#nav li:first-child a{
+	border: none; /*is the MENU button if #nav is targeted*/
+}
+/*Disable mobile nav buttons */
+#nav li:first-child a{display:none}
+a#smallnavbtn{display:none}
+
+#nav li:last-child a{
+	border-bottom:none;
+}
+
+#nav li a:hover{}
+
+#smallnavbtn a{
+	display:none;
+}
+
+#nav .current{
+	padding-right: 2px;
+}
+
+/**FOOTER**/
+div#footer{
+	margin-top: 20px;
+}
+#footer p{
+	width: 280px;
+	text-align: center;
+	margin:0 auto;
+	padding-bottom: 10px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	div#wrapper{
+		margin: 0 auto;
+	}
+
+	div#lightswitch{
+		width: 30px;
+		height: 30px;
+	}
+	div#lightswitch div{
+		margin: 0;
+	}
+	/*Top*/
+	div#top{
+		height: 30px;
+	}
+	#top h1 a{
+		margin-left: 66px;
+		line-height: 30px;
+		font-size: 30px;
+		padding: 0;
+	}
+	#top h1:first-letter{
+		font-size: 100%;
+	}
+	
+	/*Main*/
+	div#main{
+		float:none;
+		width: 90%;
+	}
+	.statspunten{
+		width: 200px !important;
+	}
+	
+	
+	/*Nav*/
+	#nav li {
+		margin: 0;
+		background: darkgreen;
+		display: block;
+		margin-bottom: 3px;
+		min-width: 100px;
+	}
+	#nav li a {
+		display: block;
+	}
+	a#smallnavbtn, #nav li:first-child a{
+		position: absolute;
+		top: 0;
+		display:block !important;
+		float: left;
+		text-decoration: none;
+		padding: 0 10px;
+		font-family: Arial, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 30px;
+		height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		border-radius: 0 0 4px 0 ;
+		-moz-border-radius: 0 0 4px 0;
+		-webkit-border-radius: 0 0 4px 0;
+	}
+	/*Put the rest of the ul at the right pos again*/
+	#nav li:first-child{margin-bottom: 30px;}
+
+	
+	div#sidebar{
+		width: 0 !important;
+	}
+	/*Only display nav when targeted*/
+	#nav {display:none}
+	#nav:target{
+		position: fixed;
+		top: 0;
+		display:block !important;
+		width:200px;
+		margin: 0;
+		z-index: 1000;
+	}
+	#nav li{
+		width:200px;
+		margin: 0;
+	}
+
+}

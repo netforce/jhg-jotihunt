@@ -1,0 +1,1 @@
+<h1><a href="/jotihunt/admin">ADMIN</a></h1>

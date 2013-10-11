@@ -1,0 +1,132 @@
+body{
+	background-color: #D0D0D0;
+	color: #000000;
+}
+::selection{
+	background-color: #EE3333;
+	color: #FFFFFF;
+}
+a, a[target="_blank"] {
+	color: #1EA019
+}
+a:hover, a[target="_blank"]:hover{
+	color: #22C022;
+}
+
+a[href^="http://jotihunt.net"], a[href^="http://www.jotihunt.net"]{
+	color: darkgreen;
+}
+
+a[href^='http://maps.google'], a[href^='https://maps.google'], a[href^='http://www.maps.google'], a[href^='https://www.maps.google']{
+	color: #985;
+}
+
+/**WRAPPER**/
+div#wrapper{
+	border: 1px solid #AAA;
+	background-color: #FCFCFC;
+}
+div#lightswitch{
+	background-color: #333333;
+}
+div#lightswitch div{
+	width: 30px;
+	height: 30px;
+	background: url('../images/lights.png') 0 0 no-repeat;
+}
+
+/**TOP**/
+#top h1 a{
+	text-shadow: #EEE 1px 1px ;
+	color: #555;
+}
+#top h1:first-letter{
+	color: #2266DD;
+}
+
+/**MAIN**/
+table tr:nth-of-type(odd){
+	background-color: #E0E0E0;
+}
+table tr:nth-of-type(even){
+	background-color: #D0D0D0;
+}
+table tr:hover{
+	background-color: #E9E9E9;
+}
+table tr:target{
+	background-color: #BBD0FC;
+}
+span.red{
+	color: #B33;
+}
+span.green{
+	color: #3B3;
+}
+
+span.rdtag{
+	background: #111;
+	color: #eee;
+}
+
+.stats{
+	background-color: #EEE;
+	border: 1px solid #BBDDFF;
+	box-shadow: 1px 2px #DDD;
+	-webkit-box-shadow: 1px 2px #DDD;
+}
+.stats span ul li{
+	background-color: #FAFAFA;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+.stats span ul li:nth-of-type(odd){
+	background-color: #DEDEDE;
+}
+.stats span ul li a{
+	color: #427222;
+}
+.stats span ul li a:hover{
+	color: #2CB011;
+}
+.activityTable{
+	color: #AAA;
+}
+
+.links li {
+	background-color: #EFEFEF;
+}
+.links li:nth-of-type(even) {
+	background-color: #E9E9E9;
+}
+
+
+/**SIDEBAR**/
+
+/**NAV**/
+#nav li a{
+	border-right: 2px solid #2266DD;
+	color: #FFFFFF;
+	background-color: #2266DD;
+}
+#nav li a:hover{
+	background-color: #FF5;/*#FFFDC4*/
+	color: #333333;
+}
+#nav .current{
+	background-color: #FFF700;
+	color: #333333;
+}
+
+/**FOOTER**/
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	/*Top*/	
+	/*Main*/
+	/*Nav*/
+	a#smallnavbtn, #nav li:first-child a{
+		color: #fff;
+		background: #4e4e4e;
+	}
+}

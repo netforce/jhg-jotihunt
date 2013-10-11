@@ -1,0 +1,1 @@
+<p>JOTIHUNT ADMIN &ndash; &copy; <?php $s=2013;echo ($s==date('Y')) ? date('Y') : $s." - ".date('y');?> SJH en RdJ</p>
